@@ -1,4 +1,5 @@
 from math import*
+import timeit
 def f(n):
   if n>=1:
     return n*f(n-1);
@@ -10,4 +11,4 @@ n=int(n1)
 if n<0:
     print ("Give another value")
 else:
-    print ("The value of factorial ",n1," is ",f(n))
+    print ("The value of factorial ",n1," is ",f(n),"\nTime taken to run the code: ",timeit.timeit())
